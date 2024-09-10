@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Java\jdk-22.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\chatu\AppData\Local\Temp\surefire7195712268332489535\surefirebooter-20240908232636364_3.jar C:\Users\chatu\AppData\Local\Temp\surefire7195712268332489535 2024-09-08T23-26-36_203-jvmRun1 surefire-20240908232636364_1tmp surefire_0-20240908232636364_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\chatu\AppData\Local\Temp\surefire170053694854975748\surefirebooter-20240910223154626_3.jar C:\Users\chatu\AppData\Local\Temp\surefire170053694854975748 2024-09-10T22-31-54_466-jvmRun1 surefire-20240910223154626_1tmp surefire_0-20240910223154626_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Home\PasswordBackupApp\passwordmanager\target\test-classes;C:\Home\PasswordBackupApp\passwordmanager\target\classes;C:\Users\chatu\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\chatu\AppData\Local\Temp\surefire7195712268332489535\surefirebooter-20240908232636364_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\chatu\AppData\Local\Temp\surefire170053694854975748\surefirebooter-20240910223154626_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.2+9-70"/>

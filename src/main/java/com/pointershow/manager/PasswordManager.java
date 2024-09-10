@@ -36,7 +36,11 @@ public class PasswordManager {
         try {
             if (!storage.exists()) {
                 storage.createNewFile();
+                storage.setExecutable(false);
+                storage.setReadable(false);
+                storage.setWritable(false);
             }
+            
         } catch (IOException e) {
             System.err.println("Error creating file: " + e.getMessage());
         }
@@ -46,13 +50,17 @@ public class PasswordManager {
     public static void addNewEntry(PasswordEntry entry) {
         List<PasswordEntry> existingEntries = getAllEntries();
         existingEntries.add(entry);
-
-        try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(getFile()))) {
+        File file=getFile();
+        file.setWritable(true);
+        try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(file))) {
             for (PasswordEntry e : existingEntries) {
                 objectOutputStream.writeObject(e);
             }
         } catch (IOException e) {
             System.err.println("Error writing entry: " + e.getMessage());
+        }
+        finally{
+            file.setWritable(false);
         }
     }
 
@@ -60,6 +68,11 @@ public class PasswordManager {
         List<PasswordEntry> entries = new LinkedList<>();
         File file = getFile();
 
+        if(!file.exists() || file.length()==0){
+            return entries;
+        }
+
+        file.setReadable(true);
         try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(file))) {
             while (true) {
                 try {
@@ -74,6 +87,9 @@ public class PasswordManager {
         } catch (ClassNotFoundException e) {
             System.err.println("Class not found: " + e.getMessage());
         }
+        finally{
+            file.setReadable(false);
+        }
 
         return entries;
     }
@@ -85,5 +101,35 @@ public class PasswordManager {
             }
         }
         throw new Exception("Entry Not Found");
+    }
+
+    public static boolean isRepeated(PasswordEntry e){
+        for(PasswordEntry entry:getAllEntries()){
+            if(e.userid.equalsIgnoreCase(entry.userid)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static void updatePassword(PasswordEntry newEntry){
+        List<PasswordEntry> allEntries=getAllEntries();
+        for(PasswordEntry e:allEntries){
+            if(e.userid.equalsIgnoreCase(newEntry.userid)){
+                e.password=newEntry.password;
+            }
+        }
+        File file=getFile();
+        file.setWritable(true);
+        try (ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream(file))) {
+            for(PasswordEntry entry:allEntries){
+                oos.writeObject(entry);
+            }
+        } catch (IOException e) {
+            System.err.println("Error While Updatig Password: "+e.getMessage());
+        }
+        finally{
+            file.setWritable(false);
+        }
     }
 }
