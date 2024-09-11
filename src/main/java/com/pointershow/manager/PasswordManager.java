@@ -13,7 +13,7 @@ import java.util.List;
 
 public class PasswordManager {
     private final static String STORAGEFILENAME = "password.manager";
-
+    
     public static class PasswordEntry implements Serializable {
         private static final long serialVersionUID = 1L;
 
@@ -30,21 +30,22 @@ public class PasswordManager {
             return "{" + this.userid + ": " + this.password + "}";
         }
     }
-
+    
+    
     private static File getFile() {
-        File storage = new File(STORAGEFILENAME);
+        File STORAGE = new File(STORAGEFILENAME);
         try {
-            if (!storage.exists()) {
-                storage.createNewFile();
-                storage.setExecutable(false);
-                storage.setReadable(false);
-                storage.setWritable(false);
+            if (!STORAGE.exists()) {
+                STORAGE.createNewFile();
+                STORAGE.setExecutable(false);
+                STORAGE.setReadable(false);
+                STORAGE.setWritable(false);
             }
             
         } catch (IOException e) {
             System.err.println("Error creating file: " + e.getMessage());
         }
-        return storage;
+        return STORAGE;
     }
 
     public static void addNewEntry(PasswordEntry entry) {

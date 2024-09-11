@@ -11,6 +11,7 @@ import com.pointershow.manager.PasswordManager.PasswordEntry;
 
 
 
+
 public class OutputGiver {
     private static void copyToClipboard(String text){
         try{
@@ -24,7 +25,7 @@ public class OutputGiver {
     }
 
     public static void show(){
-            System.out.println("...... All Passwords ......");
+        System.out.println("...... All Passwords ......");
         for(PasswordEntry entry: PasswordManager.getAllEntries()){
             System.out.println("Password for "+entry.userid+" is : "+entry.password);
         }
@@ -34,7 +35,10 @@ public class OutputGiver {
         try {
             String password=PasswordManager.getPassword(userid);
             System.out.println("Password For "+userid+" is : "+ password);
-            copyToClipboard(password);
+            Thread copyThread=new Thread(()->{
+                copyToClipboard(password);
+            });
+            copyThread.start();
             System.out.println("\nPASSWORD COPIED TO CLIPBOARD !!");
         } catch (Exception e) {
             System.err.println(e.getMessage());

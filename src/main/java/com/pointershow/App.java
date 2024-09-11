@@ -46,9 +46,6 @@ public class App
                     OutputGiver.show();
                 }
             }
-            else if(args[0].equalsIgnoreCase("-update")){
-                
-            }
             else{
                 for(String msg:USAGE_MESSAGE){
                     System.err.println(msg);
