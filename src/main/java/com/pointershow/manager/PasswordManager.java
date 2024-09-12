@@ -49,6 +49,10 @@ public class PasswordManager {
     }
 
     public static void addNewEntry(PasswordEntry entry) {
+        // if entry is repeated return 
+        if(isRepeated(entry)){
+            return;
+        }
         List<PasswordEntry> existingEntries = getAllEntries();
         existingEntries.add(entry);
         File file=getFile();

@@ -1,5 +1,6 @@
 package com.pointershow;
 
+import com.pointershow.database.PasswordBackupDao;
 import com.pointershow.inputoutput.InputTaker;
 import com.pointershow.inputoutput.OutputGiver;
 import com.pointershow.manager.PasswordManager;
@@ -45,6 +46,10 @@ public class App
                 else{
                     OutputGiver.show();
                 }
+            }
+            else if(args[0].equalsIgnoreCase("-backup")){
+                PasswordBackupDao passwordBackupDao=new PasswordBackupDao();
+                passwordBackupDao.syncWithDb();
             }
             else{
                 for(String msg:USAGE_MESSAGE){

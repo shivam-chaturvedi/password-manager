@@ -2,6 +2,7 @@ com\pointershow\manager\PasswordManager$PasswordEntry.class
 com\pointershow\manager\PasswordManager.class
 com\pointershow\manager\FileEncrypter.class
 com\pointershow\App.class
+com\pointershow\database\PasswordBackupDao.class
 com\pointershow\manager\PasswordGenerator.class
 com\pointershow\inputoutput\InputTaker.class
 com\pointershow\inputoutput\OutputGiver.class

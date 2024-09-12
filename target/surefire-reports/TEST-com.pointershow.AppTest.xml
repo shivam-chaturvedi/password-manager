@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.pointershow.AppTest" time="0.026" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.pointershow.AppTest" time="0.043" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Home\PasswordBackupApp\passwordmanager\target\test-classes;C:\Home\PasswordBackupApp\passwordmanager\target\classes;C:\Users\chatu\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="java.class.path" value="C:\Home\PasswordBackupApp\passwordmanager\target\test-classes;C:\Home\PasswordBackupApp\passwordmanager\target\classes;C:\Users\chatu\.m2\repository\com\mysql\mysql-connector-j\9.0.0\mysql-connector-j-9.0.0.jar;C:\Users\chatu\.m2\repository\com\google\protobuf\protobuf-java\4.26.1\protobuf-java-4.26.1.jar;C:\Users\chatu\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Java\jdk-22.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\chatu\AppData\Local\Temp\surefire3619844857043699099\surefirebooter-20240911210732247_3.jar C:\Users\chatu\AppData\Local\Temp\surefire3619844857043699099 2024-09-11T21-07-32_008-jvmRun1 surefire-20240911210732247_1tmp surefire_0-20240911210732247_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\chatu\AppData\Local\Temp\surefire17854188335242919135\surefirebooter-20240912193148109_3.jar C:\Users\chatu\AppData\Local\Temp\surefire17854188335242919135 2024-09-12T19-31-47_948-jvmRun1 surefire-20240912193148109_1tmp surefire_0-20240912193148109_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Home\PasswordBackupApp\passwordmanager\target\test-classes;C:\Home\PasswordBackupApp\passwordmanager\target\classes;C:\Users\chatu\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Home\PasswordBackupApp\passwordmanager\target\test-classes;C:\Home\PasswordBackupApp\passwordmanager\target\classes;C:\Users\chatu\.m2\repository\com\mysql\mysql-connector-j\9.0.0\mysql-connector-j-9.0.0.jar;C:\Users\chatu\.m2\repository\com\google\protobuf\protobuf-java\4.26.1\protobuf-java-4.26.1.jar;C:\Users\chatu\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\chatu"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\chatu\AppData\Local\Temp\surefire3619844857043699099\surefirebooter-20240911210732247_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\chatu\AppData\Local\Temp\surefire17854188335242919135\surefirebooter-20240912193148109_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.2+9-70"/>
@@ -50,7 +50,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Java\jdk-22.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\ucrt64\bin;C:\Home\ASMR;C:\ffmpeg-master-latest-win64-gpl\bin;C:\Java\jdk-22.0.2\bin;C:\Program Files\Git\cmd;C:\Java\apache-maven-3.9.9\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Java\apache-tomcat-9.0.93\bin;C:\Program Files\wkhtmltopdf\bin;C:\Users\chatu\Downloads\pandoc-3.3-windows-x86_64\pandoc-3.3;C:\Users\chatu\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\chatu\AppData\Local\Programs\Python\Python312\;C:\Users\chatu\AppData\Local\Microsoft\WindowsApps;C:\Users\chatu\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.library.path" value="C:\Java\jdk-22.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\ucrt64\bin;C:\Home\ASMR;C:\ffmpeg-master-latest-win64-gpl\bin;C:\Java\jdk-22.0.2\bin;C:\Program Files\Git\cmd;C:\Java\apache-maven-3.9.9\bin;C:\Program Files\MySQL\MySQL Server 9.0\bin;C:\Java\apache-tomcat-9.0.93\bin;C:\Program Files\wkhtmltopdf\bin;C:\Users\chatu\Downloads\pandoc-3.3-windows-x86_64\pandoc-3.3;C:\Home\PasswordBackupApp\build;C:\Users\chatu\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\chatu\AppData\Local\Programs\Python\Python312\;C:\Users\chatu\AppData\Local\Microsoft\WindowsApps;C:\Users\chatu\AppData\Local\Programs\Microsoft VS Code\bin;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -58,5 +58,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testApp" classname="com.pointershow.AppTest" time="0.003"/>
+  <testcase name="testApp" classname="com.pointershow.AppTest" time="0.004"/>
 </testsuite>
